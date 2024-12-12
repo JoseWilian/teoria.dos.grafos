@@ -27,8 +27,7 @@ def listToMatrix(list, matrix, option):
 
 def main():
     if len(sys.argv) == 3 and (sys.argv[2] == "1" or sys.argv[2] == "2"):
-        file = argumentos = sys.argv[1]
-        values = txtToList(file)
+        values = txtToList(sys.argv[1])
         size = values[0]
         size = size[0]
         matrix = createSquareMatrix(size)
